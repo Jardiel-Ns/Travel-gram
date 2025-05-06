@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+  gap: 24px; /*Esse gap da espaço entre os elementos da lista pois já esta ativado o display flex!*/
+  padding-block: 8px; /*o padding block coloca espaçamento apenas na parte de cima e em baixo se adicionar o segundo valor!*/
+}
+
+nav ul li:last-child img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover; /* Muito util quando a img utilizada não é perfeitamente quadrada!! */
+}
+
