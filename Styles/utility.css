@@ -1,0 +1,21 @@
+.desktop-only {
+  display: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: initial;
+  }
+}

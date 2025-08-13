@@ -9,22 +9,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travelgram | Perfil de Viagens</title>
-  <link rel="stylesheet" href="Styles/index.css">
+  <link rel="stylesheet" href="../Styles/index.css">
 </head>
 <body>
   <div class="bg-surface-color">
     <nav class="container">
       <a href="#">
-        <img src="Assets/Logo.png" alt="Logomarca da página">
+        <img src="../Assets/Logo.png" alt="Logomarca da página">
       </a>
       <ul>
         <li>
           <a href="#">
-            <img src="Assets/Icons/Menu item.png" alt="ícone de busca">
+            <img src="../Assets/Icons/Menu item.png" alt="ícone de busca">
           </a>
         </li>
-        <li><a href="#">Explorar</a></li>
-        <li><a href="#">Minhas viagens</a></li>
+        <li class="desktop-only"><a href="#">Explorar</a></li>
+        <li class="desktop-only"><a href="#">Minhas viagens</a></li>
         <li><a href="#">
           <img src="Assets/Profile pic.png" alt="ícone de usuario">
         </a></li>
@@ -33,7 +33,7 @@
     <header>
       <div class="container">
         <div id="profile">
-          <img src="Assets/Profile pic.png" alt="Imagem do usuario">
+          <img src="../Assets/Profile pic.png" alt="Imagem do usuario">
           <div>
             <h1>Isabela Torres</h1>
             <p>Amante de viagens, cultura e gastronomia. 🌍✈️<br>  
@@ -71,18 +71,20 @@
     <img src="Assets/Images/Image.png" alt="imagem">
   </main>
 
-  <footer class="container">
-    <span>
-      Travelgram &copy; 2024
-    </span>
-
-    <span>
-      Termos de uso
-    </span>
-
-    <span>
-      Política de privacidade
-    </span>
+  <footer class="container grid flow-row">
+    <div>
+      <span>
+        Travelgram &copy; 2024
+      </span>
+    </div>
+    <div class="gap-1rem flex j-center">
+      <p>
+        Termos de uso
+      </p>
+      <p>
+        Política de privacidade
+      </p>
+    </div>
   </footer>
 </body>
 </html>

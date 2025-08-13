@@ -1,46 +1,55 @@
 header {
-  padding-block: 32px; /* adiciona um espaço em cima e em baixo! */
+  padding-block: 2rem; /* adiciona um espaço em cima e em baixo! */
+
+  & img {
+    width: 7.5rem;
+  }
+
+  & h1 {
+    font: var(--text-lg);
+    color: var(--text-color-primary);
+    margin-bottom: .5rem;
+  }
+
+  & ul#info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 17.5rem;
+    margin-top: 2rem;
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    & img {
+      width: 1.5rem;
+    }
+  }
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (width >= 80em) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  font: var(--text-md);
-}
+    font: var(--text-md);
+  }
 
-header #profile {
-  display: flex;
-  gap: 32px;
-}
+  header #profile {
+    display: flex;
+    gap: 32px;
+  }
 
-#profile > div {
-  max-width: 384px;
-}
+  #profile > div {
+    max-width: 384px;
+  }
 
-#profile > img {
-  width: 150px;
-}
-
-#profile h1 {
-  font: var(--text-lg);
-  color: var(--text-color-primary);
-  margin-bottom: 8px;
-}
-
-div #info {
-  list-style: none;
-
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  width: 280px;
-}
-
-#info li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  #profile > img {
+    width: 150px;
+  }
 }
